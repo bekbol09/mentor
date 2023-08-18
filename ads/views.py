@@ -16,4 +16,3 @@ def ads_list(request):
         "all_ads": all_ads
     }
     return render(request, 'index.html', context = context)
-
