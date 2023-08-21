@@ -12,6 +12,7 @@ def ads_list(request):
     print(first.description)
     print(first.price)
     print(all_ads)
+    print(first.image.url)
     context = {
         "all_ads": all_ads
     }
