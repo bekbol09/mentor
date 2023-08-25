@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 align="center"> Delete Ad </h1>
+
+    <form align="center" method="post">
+
+        {% csrf_token %}
+        <button type="submit" class="btn btn-sm btn-danger"> Подвердить </button>
+        <a href="{% url 'ads-list' %}"class="btn btn-sm btn-outline-success"> Отмена </a>
+    </form>
+
+{% endblock %}
