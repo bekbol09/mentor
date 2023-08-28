@@ -13,6 +13,7 @@ from .forms import AdForm
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
 
 
+
 def category_list(request):
     all_categories = Category.objects.all()
     context = {
@@ -28,7 +29,7 @@ class AdsListView(ListView):
     
 
 class AdsDetailView(DetailView):
-    template_name = 'retrieve_ad.html'
+    template_name = 'retrieve.html'
     queryset = Ads.objects.all()
     context_object_name = 'ad'
 
